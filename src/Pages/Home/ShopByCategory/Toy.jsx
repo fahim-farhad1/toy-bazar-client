@@ -13,13 +13,13 @@ const Toy = () => {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{toyName}</h2>
-        <p>{seller}</p>
-        <p>{sellerEmail}</p>
-        <p>{price}</p>
-        <p>{rating}</p>
-        <p>{quantity}</p>
-        <p>{details}</p>
+        <h2 className="card-title"><span>Name: </span>{toyName}</h2>
+        <p><span className="font-bold ">Seller Name:</span><span>{seller}</span></p>
+        <p><span className="font-bold ">Email: </span><span>{sellerEmail}</span></p>
+        <p><span className="font-bold ">Price: $</span><span>{price}</span></p>
+        <p><span className="font-bold ">Rating: </span><span>{rating}</span></p>
+        <p><span className="font-bold ">Available Item: </span><span>{quantity}</span></p>
+        <p><span className="font-bold ">Description: </span><span>{details}</span> </p>
         
       </div>
     </div>
