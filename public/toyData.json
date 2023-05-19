@@ -1,372 +1,332 @@
 [
   {
-    "toyName": "Iron Man Action Figure",
-    "seller": "Marvel Store",
-    "imageUrl": "https://example.com/toys/ironman.jpg",
+    "toyName": "Iron Man Mark 50 Helmet",
+    "seller": "Stark Industries",
+    "sellerEmail": "sales@starkindustries.com",
+    "imageUrl": "https://example.com/toys/ironmanhelmet.jpg",
     "category": "Marvel",
-    "price": 19.99,
-    "rating": 4.2,
-    "details": "This action figure features Iron Man in his iconic suit, with articulated joints for different poses. Perfect for Marvel fans and collectors!"
-  },
-  {
-    "toyName": "Spider-Man Web Shooter",
-    "seller": "Web Slingers Emporium",
-    "imageUrl": "https://example.com/toys/spiderman.jpg",
-    "category": "Marvel",
-    "price": 14.99,
-    "rating": 4.8,
-    "details": "Become Spider-Man with this awesome web shooter toy! It comes with a refillable cartridge and wrist strap for easy use during imaginative play."
-  },
-  {
-    "toyName": "Captain America Shield",
-    "seller": "Avengers Assemble Shop",
-    "imageUrl": "https://example.com/toys/captainamerica.jpg",
-    "category": "Avengers",
-    "price": 24.99,
-    "rating": 4.6,
-    "details": "Defend justice with the Captain America Shield! This toy replica is made of durable material and features realistic design and colors."
-  },
-  {
-    "toyName": "Thor's Hammer Mjolnir",
-    "seller": "Asgard Collectibles",
-    "imageUrl": "https://example.com/toys/thorhammer.jpg",
-    "category": "Avengers",
-    "price": 34.99,
-    "rating": 4.9,
-    "details": "Wield the power of Thor with this Mjolnir hammer toy! It lights up and makes sound effects when swung, adding excitement to playtime."
-  },
-  {
-    "toyName": "Lightsaber Replica",
-    "seller": "Galactic Emporium",
-    "imageUrl": "https://example.com/toys/lightsaber.jpg",
-    "category": "Star Wars",
-    "price": 39.99,
-    "rating": 4.7,
-    "details": "Choose your side and engage in epic lightsaber battles with this replica! It features realistic lights and sounds for an immersive experience."
-  },
-  {
-    "toyName": "R2-D2 Remote Control Droid",
-    "seller": "Droid Universe",
-    "imageUrl": "https://example.com/toys/r2d2.jpg",
-    "category": "Star Wars",
     "price": 49.99,
-    "rating": 4.4,
-    "details": "Control R2-D2 with a remote and watch it roll, beep, and project holographic messages, just like in the Star Wars movies!"
-  },
-  {
-    "toyName": "Black Widow Action Figure",
-    "seller": "Marvel Store",
-    "imageUrl": "https://example.com/toys/blackwidow.jpg",
-    "category": "Marvel",
-    "price": 17.99,
-    "rating": 4.3,
-    "details": "Bring home the fierce Black Widow action figure! This highly detailed figure comes with interchangeable accessories and a display stand."
-  },
-  {
-    "toyName": "Hulk Smash Hands",
-    "seller": "Gamma Rage Emporium",
-    "imageUrl": "https://example.com/toys/hulksmash.jpg",
-    "category": "Marvel",
-    "price": 29.99,
-    "rating": 4.1,
-    "details": "Feel the power of the Hulk with these giant foam Smash Hands! Kids can have fun pretending to be the strongest Avenger."
+    "rating": 4.8,
+    "details": "Suit up as Iron Man with this Mark 50 Helmet! It features electronic lights and sound effects for an authentic experience.",
+    "quantity": 15
   },
   {
     "toyName": "Thanos Infinity Gauntlet",
-    "seller": "Cosmic Collectibles",
+    "seller": "Galactic Emporium",
+    "sellerEmail": "info@galacticemporium.com",
     "imageUrl": "https://example.com/toys/thanosgauntlet.jpg",
-    "category": "Avengers",
-    "price": 44.99,
-    "rating": 4.8,
-    "details": "Control the fate of the universe with this replica of Thanos' Infinity Gauntlet! It features glowing stones and articulated fingers."
-  },
-  {
-    "toyName": "Black Panther Vibranium Suit",
-    "seller": "Wakanda Treasures",
-    "imageUrl": "https://example.com/toys/blackpanther.jpg",
-    "category": "Avengers",
-    "price": 54.99,
-    "rating": 4.9,
-    "details": "Immerse yourself in the world of Wakanda with this Black Panther Vibranium Suit toy! It comes with a mask and realistic suit details."
-  },
-  {
-    "toyName": "Kylo Ren Lightsaber",
-    "seller": "Dark Side Collectibles",
-    "imageUrl": "https://example.com/toys/kylorenlightsaber.jpg",
-    "category": "Star Wars",
-    "price": 49.99,
-    "rating": 4.6,
-    "details": "Unleash your inner Sith with Kylo Ren's Lightsaber! It features a crossguard design and lights up with a red blade."
-  },
-  {
-    "toyName": "BB-8 App-Enabled Droid",
-    "seller": "AstroTech",
-    "imageUrl": "https://example.com/toys/bb8.jpg",
-    "category": "Star Wars",
-    "price": 59.99,
-    "rating": 4.5,
-    "details": "Control BB-8 with your smartphone or tablet and watch it explore your surroundings, make sounds, and interact with Star Wars characters."
-  },
-  {
-    "toyName": "Wolverine Claws",
-    "seller": "Mutant Emporium",
-    "imageUrl": "https://example.com/toys/wolverineclaws.jpg",
     "category": "Marvel",
-    "price": 19.99,
-    "rating": 4.4,
-    "details": "Unleash your inner mutant with these Wolverine Claws! They extend and retract, and the soft foam construction ensures safety during play."
-  },
-  {
-    "toyName": "Thor Action Figure",
-    "seller": "Asgard Collectibles",
-    "imageUrl": "https://example.com/toys/thor.jpg",
-    "category": "Marvel",
-    "price": 22.99,
-    "rating": 4.7,
-    "details": "Bring the mighty Thor into your collection with this highly detailed action figure! It comes with Thor's iconic hammer, Mjolnir."
-  },
-  {
-    "toyName": "Hawkeye Bow and Arrow Set",
-    "seller": "Archery Pro",
-    "imageUrl": "https://example.com/toys/hawkeye.jpg",
-    "category": "Avengers",
-    "price": 27.99,
-    "rating": 4.3,
-    "details": "Practice your archery skills with this Hawkeye Bow and Arrow Set! It includes a bow, arrows with suction cup tips, and a target."
-  },
-  {
-    "toyName": "Darth Vader Helmet",
-    "seller": "Dark Side Collectibles",
-    "imageUrl": "https://example.com/toys/darthvaderhelmet.jpg",
-    "category": "Star Wars",
-    "price": 79.99,
-    "rating": 4.9,
-    "details": "Embrace the power of the dark side with this Darth Vader Helmet! It features authentic design and sound effects, perfect for cosplay or display."
-  },
-  {
-    "toyName": "Groot Dancing Speaker",
-    "seller": "Guardians Galore",
-    "imageUrl": "https://example.com/toys/groot.jpg",
-    "category": "Marvel",
-    "price": 32.99,
-    "rating": 4.6,
-    "details": "Watch Groot dance to your favorite tunes with this adorable speaker! It connects to your music device via Bluetooth and lights up with each beat."
-  },
-  {
-    "toyName": "Black Widow Taskmaster Sword",
-    "seller": "Marvel Store",
-    "imageUrl": "https://example.com/toys/taskmaster.jpg",
-    "category": "Marvel",
-    "price": 16.99,
-    "rating": 4.2,
-    "details": "Recreate thrilling fight scenes with Black Widow's Taskmaster Sword! It features intricate details and safe, soft foam construction."
-  },
-  {
-    "toyName": "Loki Helmet",
-    "seller": "Mischief Makers",
-    "imageUrl": "https://example.com/toys/lokihelmet.jpg",
-    "category": "Marvel",
-    "price": 34.99,
-    "rating": 4.7,
-    "details": "Embody the God of Mischief with this Loki Helmet! It comes with horns, a movable visor, and a realistic, metallic finish."
-  },
-  {
-    "toyName": "Hulkbuster Action Figure",
-    "seller": "Gamma Rage Emporium",
-    "imageUrl": "https://example.com/toys/hulkbuster.jpg",
-    "category": "Avengers",
-    "price": 39.99,
-    "rating": 4.5,
-    "details": "Unleash the power of the Hulkbuster with this action figure! It stands tall and features intricate armor details."
-  },
-  {
-    "toyName": "Rey Lightsaber",
-    "seller": "Jedi Academy",
-    "imageUrl": "https://example.com/toys/reylightsaber.jpg",
-    "category": "Star Wars",
-    "price": 44.99,
-    "rating": 4.3,
-    "details": "Join the ranks of the Jedi with Rey's Lightsaber! It extends with a flick of the wrist and lights up in blue."
-  },
-  {
-    "toyName": "Doctor Strange Eye of Agamotto",
-    "seller": "Mystic Wonders",
-    "imageUrl": "https://example.com/toys/doctorsrange.jpg",
-    "category": "Marvel",
-    "price": 26.99,
-    "rating": 4.7,
-    "details": "Harness the power of the Eye of Agamotto with this Doctor Strange toy! It features glowing effects and a removable Eye of Agamotto pendant."
-  },
-  {
-    "toyName": "Rocket Raccoon Plush",
-    "seller": "Guardians Galore",
-    "imageUrl": "https://example.com/toys/rocketraccoon.jpg",
-    "category": "Marvel",
-    "price": 18.99,
-    "rating": 4.4,
-    "details": "Cuddle up with Rocket Raccoon with this soft and huggable plush toy! Perfect for Guardians of the Galaxy fans of all ages."
-  },
-  {
-    "toyName": "Gamora Sword",
-    "seller": "Marvel Store",
-    "imageUrl": "https://example.com/toys/gamora.jpg",
-    "category": "Marvel",
-    "price": 21.99,
-    "rating": 4.5,
-    "details": "Channel your inner assassin with Gamora's sword! It features a sleek design and safe, soft foam construction for exciting play."
-  },
-  {
-    "toyName": "Star-Lord Electronic Helmet",
-    "seller": "Guardians Galore",
-    "imageUrl": "https://example.com/toys/starlord.jpg",
-    "category": "Marvel",
-    "price": 54.99,
-    "rating": 4.8,
-    "details": "Get ready for intergalactic adventures with Star-Lord's Electronic Helmet! It features lights, sound effects, and a built-in Bluetooth speaker."
-  },
-  {
-    "toyName": "Stormbreaker Axe",
-    "seller": "Asgard Collectibles",
-    "imageUrl": "https://example.com/toys/stormbreaker.jpg",
-    "category": "Avengers",
-    "price": 49.99,
-    "rating": 4.6,
-    "details": "Harness the power of Thor's Stormbreaker Axe! It lights up and makes thunderous sound effects, perfect for epic battles."
-  },
-  {
-    "toyName": "Darth Maul Double-Bladed Lightsaber",
-    "seller": "Dark Side Collectibles",
-    "imageUrl": "https://example.com/toys/darthmaul.jpg",
-    "category": "Star Wars",
     "price": 69.99,
     "rating": 4.9,
-    "details": "Experience the mastery of the Sith with Darth Maul's Double-Bladed Lightsaber! It extends and lights up with red blades on both ends."
+    "details": "Wield the power of the Infinity Stones with this Thanos Infinity Gauntlet! It features articulated fingers and glowing stones.",
+    "quantity": 10
   },
   {
-    "toyName": "Ant-Man Helmet",
-    "seller": "Quantum Gear",
-    "imageUrl": "https://example.com/toys/antman.jpg",
-    "category": "Marvel",
-    "price": 36.99,
-    "rating": 4.3,
-    "details": "Shrink and grow like Ant-Man with this replica helmet! It features electronic sound effects and adjustable straps for a comfortable fit."
-  },
-  {
-    "toyName": "Groot Action Figure",
-    "seller": "Guardians Galore",
-    "imageUrl": "https://example.com/toys/grootfigure.jpg",
-    "category": "Marvel",
-    "price": 23.99,
-    "rating": 4.5,
-    "details": "Celebrate the adorable Groot with this action figure! It features multiple points of articulation and a potted Groot accessory."
-  },
-  {
-    "toyName": "Loki Scepter",
-    "seller": "Mischief Makers",
-    "imageUrl": "https://example.com/toys/lokiscepter.jpg",
-    "category": "Marvel",
-    "price": 32.99,
+    "toyName": "Millennium Falcon LEGO Set",
+    "seller": "Brick Galaxy",
+    "sellerEmail": "sales@brickgalaxy.com",
+    "imageUrl": "https://example.com/toys/millenniumfalcon.jpg",
+    "category": "Star Wars",
+    "price": 129.99,
     "rating": 4.7,
-    "details": "Embrace your mischievous side with Loki's Scepter! It lights up with a blue gem and features intricate design details."
+    "details": "Embark on epic space adventures with the Millennium Falcon LEGO Set! It includes minifigures and removable sections for easy play.",
+    "quantity": 8
   },
   {
-    "toyName": "Groot Dancing Figure",
-    "seller": "Guardians Galore",
-    "imageUrl": "https://example.com/toys/grootdancing.jpg",
-    "category": "Marvel",
-    "price": 28.99,
-    "rating": 4.4,
-    "details": "Watch Groot dance to your favorite tunes with this adorable dancing figure! It has built-in music and motion-activated dancing."
-  },
-  {
-    "toyName": "Scarlet Witch Magic Gloves",
-    "seller": "Marvel Store",
-    "imageUrl": "https://example.com/toys/scarletwitch.jpg",
+    "toyName": "Spider-Man Web-Shooters",
+    "seller": "Web Slingers Emporium",
+    "sellerEmail": "contact@webslingers.com",
+    "imageUrl": "https://example.com/toys/spidermanwebshooters.jpg",
     "category": "Marvel",
     "price": 19.99,
-    "rating": 4.3,
-    "details": "Unleash the powers of Scarlet Witch with these magical gloves! They light up and make sound effects, adding excitement to playtime."
-  },
-  {
-    "toyName": "Winter Soldier Arm",
-    "seller": "Avengers Assemble Shop",
-    "imageUrl": "https://example.com/toys/wintersoldier.jpg",
-    "category": "Avengers",
-    "price": 39.99,
-    "rating": 4.6,
-    "details": "Gear up as the Winter Soldier with this arm replica! It features a mechanical design and adjustable straps for a secure fit."
-  },
-  {
-    "toyName": "Darth Vader Action Figure",
-    "seller": "Dark Side Collectibles",
-    "imageUrl": "https://example.com/toys/darthvaderfigure.jpg",
-    "category": "Star Wars",
-    "price": 24.99,
     "rating": 4.5,
-    "details": "Command the Galactic Empire with this Darth Vader action figure! It comes with a lightsaber accessory and removable cape."
-  },
-  {
-    "toyName": "Spider-Man Web Swing Set",
-    "seller": "Web Slingers Emporium",
-    "imageUrl": "https://example.com/toys/spidermanswing.jpg",
-    "category": "Marvel",
-    "price": 32.99,
-    "rating": 4.8,
-    "details": "Swing into action with this Spider-Man Web Swing Set! It includes a web swing and wrist shooters for high-flying adventures."
-  },
-  {
-    "toyName": "Iron Spider Action Figure",
-    "seller": "Marvel Store",
-    "imageUrl": "https://example.com/toys/ironspider.jpg",
-    "category": "Marvel",
-    "price": 22.99,
-    "rating": 4.6,
-    "details": "Join the Avengers with this Iron Spider action figure! It features multiple points of articulation and detailed suit design."
-  },
-  {
-    "toyName": "Hawkeye Action Figure",
-    "seller": "Archery Pro",
-    "imageUrl": "https://example.com/toys/hawkeyefigure.jpg",
-    "category": "Avengers",
-    "price": 21.99,
-    "rating": 4.4,
-    "details": "Sharpen your archery skills with this Hawkeye action figure! It comes with a bow, arrows, and a quiver for action-packed play."
-  },
-  {
-    "toyName": "Yoda Plush",
-    "seller": "Jedi Academy",
-    "imageUrl": "https://example.com/toys/yoda.jpg",
-    "category": "Star Wars",
-    "price": 18.99,
-    "rating": 4.3,
-    "details": "May the Force be with you with this cuddly Yoda plush! It's perfect for hugging and displaying as part of your Star Wars collection."
-  },
-  {
-    "toyName": "Venom Action Figure",
-    "seller": "Marvel Store",
-    "imageUrl": "https://example.com/toys/venomfigure.jpg",
-    "category": "Marvel",
-    "price": 24.99,
-    "rating": 4.5,
-    "details": "Embrace the darkness with this Venom action figure! It features a detailed sculpt and multiple points of articulation."
+    "details": "Become Spider-Man with these web-shooters! They shoot water-based web fluid and are adjustable to fit different wrist sizes.",
+    "quantity": 20
   },
   {
     "toyName": "Captain America Shield",
     "seller": "Asgard Collectibles",
+    "sellerEmail": "orders@asgardcollectibles.com",
     "imageUrl": "https://example.com/toys/captainamericashield.jpg",
     "category": "Marvel",
     "price": 29.99,
     "rating": 4.7,
-    "details": "Defend justice with Captain America's shield! It's made of high-quality materials and features a patriotic design."
+    "details": "Defend justice with Captain America's shield! It's made of high-quality materials and features a patriotic design.",
+    "quantity": 12
   },
   {
-    "toyName": "Captain Marvel Photon Power FX Glove",
-    "seller": "Marvel Store",
-    "imageUrl": "https://example.com/toys/captainmarvel.jpg",
-    "category": "Marvel",
-    "price": 34.99,
+    "toyName": "Darth Vader Lightsaber",
+    "seller": "Dark Side Collectibles",
+    "sellerEmail": "sales@darksidecollectibles.com",
+    "imageUrl": "https://example.com/toys/darthvaderlightsaber.jpg",
+    "category": "Star Wars",
+    "price": 39.99,
     "rating": 4.6,
-    "details": "Unleash the power of Captain Marvel with this Photon Power FX Glove! It lights up and makes sound effects for epic battles."
+    "details": "Join the dark side with Darth Vader's Lightsaber! It lights up and makes authentic sound effects for realistic battles.",
+    "quantity": 18
+  },
+  {
+    "toyName": "Black Widow Figure",
+    "seller": "Marvel Store",
+    "sellerEmail": "customerservice@marvelstore.com",
+    "imageUrl": "https://example.com/toys/blackwidowfigure.jpg",
+    "category": "Marvel",
+    "price": 24.99,
+    "rating": 4.4,
+    "details": "Unleash your spy skills with this Black Widow action figure! It features multiple points of articulation and includes weapons.",
+    "quantity": 14
+  },
+  {
+    "toyName": "X-Wing Fighter Model Kit",
+    "seller": "Rebel Alliance Emporium",
+    "sellerEmail": "info@rebelalliance.com",
+    "imageUrl": "https://example.com/toys/xwingfighter.jpg",
+    "category": "Star Wars",
+    "price": 34.99,
+    "rating": 4.8,
+    "details": "Build your own X-Wing Fighter with this model kit! It includes detailed parts and decals for a realistic appearance.",
+    "quantity": 6
+  },
+  {
+    "toyName": "Thor Hammer",
+    "seller": "Asgard Collectibles",
+    "sellerEmail": "support@asgardcollectibles.com",
+    "imageUrl": "https://example.com/toys/thorhammer.jpg",
+    "category": "Marvel",
+    "price": 49.99,
+    "rating": 4.7,
+    "details": "Summon the power of Thor with this Mjolnir Hammer! It lights up and emits thunderous sound effects when wielded.",
+    "quantity": 9
+  },
+  {
+    "toyName": "BB-8 Droid",
+    "seller": "Droid Depot",
+    "sellerEmail": "sales@droiddepot.com",
+    "imageUrl": "https://example.com/toys/bb8droid.jpg",
+    "category": "Star Wars",
+    "price": 59.99,
+    "rating": 4.8,
+    "details": "Go on galactic adventures with BB-8! This droid rolls, beeps, and interacts with you using its built-in AI.",
+    "quantity": 11
+  },
+  {
+    "toyName": "Hulk Smash Hands",
+    "seller": "Marvel Store",
+    "sellerEmail": "orders@marvelstore.com",
+    "imageUrl": "https://example.com/toys/hulksmashhands.jpg",
+    "category": "Marvel",
+    "price": 19.99,
+    "rating": 4.5,
+    "details": "Unleash your inner Hulk with these Smash Hands! They make smashing sound effects when you punch and smash.",
+    "quantity": 16
+  },
+  {
+    "toyName": "Kylo Ren Lightsaber",
+    "seller": "Dark Side Collectibles",
+    "sellerEmail": "support@darksidecollectibles.com",
+    "imageUrl": "https://example.com/toys/kylorenlightsaber.jpg",
+    "category": "Star Wars",
+    "price": 39.99,
+    "rating": 4.6,
+    "details": "Embrace the power of the dark side with Kylo Ren's Lightsaber! It lights up and features realistic sound effects.",
+    "quantity": 13
+  },
+  {
+    "toyName": "Hawkeye Bow and Arrow Set",
+    "seller": "Archery Pro",
+    "sellerEmail": "sales@archerypro.com",
+    "imageUrl": "https://example.com/toys/hawkeyebowarrow.jpg",
+    "category": "Marvel",
+    "price": 29.99,
+    "rating": 4.4,
+    "details": "Take aim like Hawkeye with this bow and arrow set! It includes a bow, arrows, and a target for precision training.",
+    "quantity": 7
+  },
+  {
+    "toyName": "Yoda Plush",
+    "seller": "Jedi Academy",
+    "sellerEmail": "info@jediacademy.com",
+    "imageUrl": "https://example.com/toys/yoda.jpg",
+    "category": "Star Wars",
+    "price": 18.99,
+    "rating": 4.3,
+    "details": "May the Force be with you with this cuddly Yoda plush! It's perfect for hugging and displaying as part of your Star Wars collection.",
+    "quantity": 21
+  },
+  {
+    "toyName": "Black Panther Costume",
+    "seller": "Wakanda Wonders",
+    "sellerEmail": "support@wakandawonders.com",
+    "imageUrl": "https://example.com/toys/blackpanthercostume.jpg",
+    "category": "Marvel",
+    "price": 39.99,
+    "rating": 4.7,
+    "details": "Protect Wakanda with this Black Panther costume! It includes a jumpsuit, mask, and vibranium-inspired accessories.",
+    "quantity": 15
+  },
+  {
+    "toyName": "R2-D2 Interactive Droid",
+    "seller": "Droid Depot",
+    "sellerEmail": "info@droiddepot.com",
+    "imageUrl": "https://example.com/toys/r2d2droid.jpg",
+    "category": "Star Wars",
+    "price": 79.99,
+    "rating": 4.9,
+    "details": "Interact with R2-D2, the beloved astromech droid! It responds to voice commands and has realistic movement.",
+    "quantity": 10
+  },
+  {
+    "toyName": "Wolverine Claws",
+    "seller": "Marvel Store",
+    "sellerEmail": "contact@marvelstore.com",
+    "imageUrl": "https://example.com/toys/wolverineclaws.jpg",
+    "category": "Marvel",
+    "price": 14.99,
+    "rating": 4.3,
+    "details": "Unleash your inner mutant with these Wolverine claws! They extend and retract with a satisfying 'snikt' sound.",
+    "quantity": 19
+  },
+  {
+    "toyName": "Stormtrooper Helmet",
+    "seller": "Imperial Armory",
+    "sellerEmail": "sales@imperialarmory.com",
+    "imageUrl": "https://example.com/toys/stormtrooperhelmet.jpg",
+    "category": "Star Wars",
+    "price": 49.99,
+    "rating": 4.6,
+    "details": "Serve the Galactic Empire with this Stormtrooper Helmet! It features adjustable straps and an authentic design.",
+    "quantity": 8
+  },
+  {
+    "toyName": "Spider-Gwen Figure",
+    "seller": "Marvel Store",
+    "sellerEmail": "support@marvelstore.com",
+    "imageUrl": "https://example.com/toys/spidergwenfigure.jpg",
+    "category": "Marvel",
+    "price": 24.99,
+    "rating": 4.5,
+    "details": "Swing into action with Spider-Gwen! This figure features a stylish costume design and dynamic poseability.",
+    "quantity": 14
+  },
+  {
+    "toyName": "Rey Lightsaber",
+    "seller": "Jedi Academy",
+    "sellerEmail": "orders@jediacademy.com",
+    "imageUrl": "https://example.com/toys/reylightsaber.jpg",
+    "category": "Star Wars",
+    "price": 34.99,
+    "rating": 4.7,
+    "details": "Become a Jedi like Rey with this lightsaber! It extends and lights up with blue or green blades.",
+    "quantity": 9
+  },
+  {
+    "toyName": "Groot Plush",
+    "seller": "Galactic Emporium",
+    "sellerEmail": "info@galacticemporium.com",
+    "imageUrl": "https://example.com/toys/grootplush.jpg",
+    "category": "Marvel",
+    "price": 18.99,
+    "rating": 4.4,
+    "details": "I am Groot! Snuggle up with this adorable Groot plush and let him guard your room with his tree-like charm.",
+    "quantity": 17
+  },
+  {
+    "toyName": "Darth Maul Double-Bladed Lightsaber",
+    "seller": "Dark Side Collectibles",
+    "sellerEmail": "contact@darksidecollectibles.com",
+    "imageUrl": "https://example.com/toys/darthmaullightsaber.jpg",
+    "category": "Star Wars",
+    "price": 39.99,
+    "rating": 4.6,
+    "details": "Embrace the dark side with Darth Maul's double-bladed lightsaber! It extends to reveal two red blades for dual-wielding.",
+    "quantity": 11
+  },
+  {
+    "toyName": "Spider-Man Web-Swinging Set",
+    "seller": "Web Slingers Emporium",
+    "sellerEmail": "support@webslingers.com",
+    "imageUrl": "https://example.com/toys/spidermanwebswinging.jpg",
+    "category": "Marvel",
+    "price": 29.99,
+    "rating": 4.5,
+    "details": "Practice web-swinging with this Spider-Man set! It includes a web line and targets for perfecting your Spidey skills.",
+    "quantity": 16
+  },
+  {
+    "toyName": "Baby Yoda Plush",
+    "seller": "Jedi Academy",
+    "sellerEmail": "customerservice@jediacademy.com",
+    "imageUrl": "https://example.com/toys/babyyoda.jpg",
+    "category": "Star Wars",
+    "price": 24.99,
+    "rating": 4.3,
+    "details": "Experience the cuteness of Baby Yoda with this adorable plush! It's a must-have for Star Wars fans and collectors.",
+    "quantity": 19
+  },
+  {
+    "toyName": "Venom Action Figure",
+    "seller": "Marvel Store",
+    "sellerEmail": "sales@marvelstore.com",
+    "imageUrl": "https://example.com/toys/venomfigure.jpg",
+    "category": "Marvel",
+    "price": 24.99,
+    "rating": 4.5,
+    "details": "Embrace the darkness with this Venom action figure! It features a detailed sculpt and multiple points of articulation.",
+    "quantity": 13
+  },
+  {
+    "toyName": "Captain America Shield",
+    "seller": "Asgard Collectibles",
+    "sellerEmail": "orders@asgardcollectibles.com",
+    "imageUrl": "https://example.com/toys/captainamericashield.jpg",
+    "category": "Marvel",
+    "price": 29.99,
+    "rating": 4.7,
+    "details": "Defend justice with Captain America's shield! It's made of high-quality materials and features a patriotic design.",
+    "quantity": 12
+  },
+  {
+    "toyName": "Death Star LEGO Set",
+    "seller": "Brick Galaxy",
+    "sellerEmail": "sales@brickgalaxy.com",
+    "imageUrl": "https://example.com/toys/deathstar.jpg",
+    "category": "Star Wars",
+    "price": 199.99,
+    "rating": 4.9,
+    "details": "Construct the iconic Death Star with this LEGO set! It includes minifigures and multiple levels for exciting play.",
+    "quantity": 5
+  },
+  {
+    "toyName": "Loki Figure",
+    "seller": "Marvel Store",
+    "sellerEmail": "contact@marvelstore.com",
+    "imageUrl": "https://example.com/toys/lokifigure.jpg",
+    "category": "Marvel",
+    "price": 24.99,
+    "rating": 4.4,
+    "details": "Cause mischief with this Loki figure! It captures the mischievous nature of the God of Mischief in intricate detail.",
+    "quantity": 14
+  },
+  {
+    "toyName": "Darth Vader Mask",
+    "seller": "Dark Side Collectibles",
+    "sellerEmail": "support@darksidecollectibles.com",
+    "imageUrl": "https://example.com/toys/darthvadermask.jpg",
+    "category": "Star Wars",
+    "price": 19.99,
+    "rating": 4.6,
+    "details": "Embody the Sith Lord with this Darth Vader mask! It features an adjustable fit and a breathing sound effect.",
+    "quantity": 18
+  },
+  {
+    "toyName": "Black Widow Figure",
+    "seller": "Marvel Store",
+    "sellerEmail": "customerservice@marvelstore.com",
+    "imageUrl": "https://example.com/toys/blackwidowfigure.jpg",
+    "category": "Marvel",
+    "price": 24.99,
+    "rating": 4.4,
+    "details": "Unleash your spy skills with this Black Widow action figure! It features multiple points of articulation and includes weapons.",
+    "quantity": 14
   }
 ]
-    

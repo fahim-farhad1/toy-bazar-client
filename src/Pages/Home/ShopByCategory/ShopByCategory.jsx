@@ -6,11 +6,14 @@ const ShopByCategory = () => {
   const [toys, setToys] = useState([]);
   // const {toyName, price, rating} = toys;
   useEffect(() => {
-    fetch("toyData.json")
+    fetch("https://toy-bazar-server.vercel.app/toys")
       .then((res) => res.json())
       .then((data) => setToys(data.slice(0, 5)));
   }, [toys]);
-  // console.log(toys);
+//------------Model Section----------------
+  const handelModal = (_id) =>{
+    console.log(_id);
+  }
   return (
     <div className="my-5">
         <p className="md:text-4xl text-center font-bold text-orange-500">Shop by category</p>
@@ -38,7 +41,7 @@ const ShopByCategory = () => {
                     <h2 className="card-title">{toy.price}</h2>
                     <h2 className="card-title">{toy.rating}</h2>
                     <div className="card-actions justify-end">
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn btn-primary" onClick={() => handelModal(toy._id)}>View Details</button>
                     </div>
                   </div>
                 </div>
@@ -63,7 +66,7 @@ const ShopByCategory = () => {
                     <h2 className="card-title">{toy.price}</h2>
                     <h2 className="card-title">{toy.rating}</h2>
                     <div className="card-actions justify-end">
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn btn-primary">View Details</button>
                     </div>
                   </div>
                 </div>
@@ -88,7 +91,7 @@ const ShopByCategory = () => {
                     <h2 className="card-title">{toy.price}</h2>
                     <h2 className="card-title">{toy.rating}</h2>
                     <div className="card-actions justify-end">
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn btn-primary">View Details</button>
                     </div>
                   </div>
                 </div>
