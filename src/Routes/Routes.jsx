@@ -29,6 +29,12 @@ const router = createBrowserRouter([
         loader: ({ params }) =>
           fetch(`https://toy-bazar-server.vercel.app/allToys/${params.id}`),
       },
+      {
+        path: "allToys/allToys/:id",
+        element: <SingleToyData></SingleToyData>,
+        loader: ({ params }) =>
+          fetch(`https://toy-bazar-server.vercel.app/allToys/${params.id}`),
+      },
     ],
   },
 ]);
