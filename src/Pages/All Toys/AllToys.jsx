@@ -51,7 +51,7 @@ const AllToys = () => {
                   <td>${toy.price}</td>
                   <td>${toy.quantity}</td>
                   <th>
-                    <Link to={`allToys/${toy._id}`}>
+                    <Link to={toy._id}>
                       <button className="btn bg-orange-600">details</button>
                     </Link>
                   </th>
