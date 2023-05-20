@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import Modal from "./Modal";
 import { Link } from "react-router-dom";
 
 const ShopByCategory = () => {
   const [toys, setToys] = useState([]);
   // const {toyName, price, rating} = toys;
   useEffect(() => {
-    fetch("https://toy-bazar-server.vercel.app/toys")
+    fetch("https://toy-bazar-server.vercel.app/allToys")
       .then((res) => res.json())
       .then((data) => setToys(data.slice(0, 5)));
-  }, [toys]);
+  }, []);
   return (
     <div className="my-5">
       <p className="md:text-4xl text-center font-bold text-orange-500">
@@ -42,7 +41,7 @@ const ShopByCategory = () => {
                     <h2 className="card-title">{toy.rating}</h2>
                     {/* Modal Section */}
                     <div className="card-actions justify-end">
-                      <Link to={`toys/${toy._id}`}><button className="btn btn-primary">View Details</button></Link>
+                      <Link to={`allToys/${toy._id}`}><button className="btn btn-primary">View Details</button></Link>
                     </div>
                   </div>
                 </div>
