@@ -8,8 +8,8 @@ import Swal from "sweetalert2";
 const ShopByCategory = () => {
   const navigate = useNavigate();
   const [toys, setToys] = useState([]);
-  const [category, setCategory] = useState('');
-  const {user} = useContext(AuthContext);
+  const [category, setCategory] = useState("");
+  const { user } = useContext(AuthContext);
   // const {toyName, price, rating} = toys;
   useEffect(() => {
     fetch(`https://toy-bazar-server.vercel.app/toys?category=${category}`)
@@ -29,7 +29,7 @@ const ShopByCategory = () => {
       }
     });
   };
-  
+
   return (
     <div className="my-5">
       <p className="md:text-4xl text-center font-bold text-orange-500">
@@ -37,9 +37,9 @@ const ShopByCategory = () => {
       </p>
       <Tabs>
         <TabList className="text-center pt-5">
-          <Tab onClick={() => setCategory('Marvel')}>Marvel</Tab>
-          <Tab onClick={() => setCategory('Transformers')}>Transformer </Tab>
-          <Tab onClick={() => setCategory('Star Wars')}>Star Wars</Tab>
+          <Tab onClick={() => setCategory("Marvel")}>Marvel</Tab>
+          <Tab onClick={() => setCategory("Transformers")}>Transformer </Tab>
+          <Tab onClick={() => setCategory("Star Wars")}>Star Wars</Tab>
         </TabList>
 
         <TabPanel className="">
@@ -60,12 +60,11 @@ const ShopByCategory = () => {
                     <h2 className="card-title">{toy.rating}</h2>
                     {/* Modal Section */}
                     <div className="card-actions justify-end">
-                    {user ? (
-                        <Link to={toy._id}>
-                          {" "}
+                      {user ? (
+                        <Link to={`/allToys/${toy._id}`}>
                           <button className="btn bg-orange-600">
                             View Details
-                          </button>{" "}
+                          </button>
                         </Link>
                       ) : (
                         <button
