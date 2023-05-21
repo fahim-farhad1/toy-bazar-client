@@ -38,7 +38,7 @@ const ShopByCategory = () => {
       <Tabs>
         <TabList className="text-center pt-5">
           <Tab onClick={() => setCategory('Marvel')}>Marvel</Tab>
-          <Tab onClick={() => setCategory('Avengers')}>Avengers </Tab>
+          <Tab onClick={() => setCategory('Transformers')}>Transformer </Tab>
           <Tab onClick={() => setCategory('Star Wars')}>Star Wars</Tab>
         </TabList>
 
