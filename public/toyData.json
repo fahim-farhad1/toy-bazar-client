@@ -1,5 +1,83 @@
 [
   {
+    "toyName": "Optimus Prime",
+    "seller": "Toyland",
+    "sellerEmail": "toyland@example.com",
+    "imageUrl": "https://example.com/optimus_prime.jpg",
+    "category": "Transformers",
+    "price": 29.99,
+    "rating": 4.5,
+    "details": "Transformers Autobot leader Optimus Prime action figure with lights and sounds.",
+    "quantity": 10
+  },
+  {
+    "toyName": "Bumblebee",
+    "seller": "ToysRUs",
+    "sellerEmail": "toysrus@example.com",
+    "imageUrl": "https://example.com/bumblebee.jpg",
+    "category": "Transformers",
+    "price": 19.99,
+    "rating": 4.2,
+    "details": "Action-packed Bumblebee action figure with vehicle-to-robot transformation.",
+    "quantity": 15
+  },
+  {
+    "toyName": "Megatron",
+    "seller": "ToyWorld",
+    "sellerEmail": "toyworld@example.com",
+    "imageUrl": "https://example.com/megatron.jpg",
+    "category": "Transformers",
+    "price": 34.99,
+    "rating": 4.7,
+    "details": "Decepticon leader Megatron action figure with interchangeable weapons.",
+    "quantity": 8
+  },
+  {
+    "toyName": "Starscream",
+    "seller": "FunToys",
+    "sellerEmail": "funtoys@example.com",
+    "imageUrl": "https://example.com/starscream.jpg",
+    "category": "Transformers",
+    "price": 27.99,
+    "rating": 4.4,
+    "details": "Classic Starscream action figure with jet mode and articulation.",
+    "quantity": 12
+  },
+  {
+    "toyName": "Soundwave",
+    "seller": "SuperToys",
+    "sellerEmail": "supertoys@example.com",
+    "imageUrl": "https://example.com/soundwave.jpg",
+    "category": "Transformers",
+    "price": 21.99,
+    "rating": 4.3,
+    "details": "Transformers Soundwave action figure with cassette player mode and mini-cassettes.",
+    "quantity": 20
+  },
+  {
+    "toyName": "Grimlock",
+    "seller": "ToyZone",
+    "sellerEmail": "toyzone@example.com",
+    "imageUrl": "https://example.com/grimlock.jpg",
+    "category": "Transformers",
+    "price": 32.99,
+    "rating": 4.6,
+    "details": "Dinobot Grimlock action figure with fierce roaring sound effects.",
+    "quantity": 6
+  },
+  {
+    "toyName": "Optimus Primal",
+    "seller": "ToyEmpire",
+    "sellerEmail": "toyempire@example.com",
+    "imageUrl": "https://example.com/optimus_primal.jpg",
+    "category": "Transformers",
+    "price": 39.99,
+    "rating": 4.8,
+    "details": "Optimus Primal action figure with gorilla and robot modes.",
+    "quantity": 3
+  },
+
+  {
     "toyName": "Iron Man Mark 50 Helmet",
     "seller": "Stark Industries",
     "sellerEmail": "sales@starkindustries.com",

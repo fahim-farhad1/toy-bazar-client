@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const AllToys = () => {
+  const navigate = useNavigate();
   const [Toys, setToys] = useState([]);
   const { user } = useContext(AuthContext);
   useEffect(() => {
@@ -15,6 +17,18 @@ const AllToys = () => {
     fetch("https://toy-bazar-server.vercel.app/allToys")
       .then((res) => res.json())
       .then((data) => setToys(data));
+  };
+  const handelModal = () => {
+    Swal.fire({
+      title: "You have to log in first to view details",
+      showCancelButton: true,
+      confirmButtonText: "login",
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        navigate("/login");
+      }
+    });
   };
 
   return (
@@ -53,15 +67,23 @@ const AllToys = () => {
                   <td>${toy.price}</td>
                   <td>{toy.quantity}</td>
                   <th>
-                    {/* <>
-                      {
-                        user ?
+                    <div>
+                      {user ? (
                         <Link to={toy._id}>
-                          <button className="btn bg-orange-600">details</button> :
+                          {" "}
+                          <button className="btn bg-orange-600">
+                            details
+                          </button>{" "}
                         </Link>
-                        <button>hi</button>
-                      }
-                    </> */}
+                      ) : (
+                        <button
+                          onClick={handelModal}
+                          className="btn bg-orange-600"
+                        >
+                          details
+                        </button>
+                      )}
+                    </div>
                   </th>
                 </tr>
               </>
