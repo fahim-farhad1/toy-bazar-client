@@ -1,11 +1,13 @@
 import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { signInWithPopup } from "firebase/auth";
 
 const Login = () => {
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { signIn } = useContext(AuthContext);
+  const { signIn, auth, googleProvider } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
@@ -15,7 +17,7 @@ const Login = () => {
     console.log("Email:", email);
     console.log("Password:", password);
 
-    
+
     setEmail("");
     setPassword("");
     signIn(email, password)
@@ -31,6 +33,18 @@ const Login = () => {
       });
 
   };
+
+  const handelGoggleSigning = () =>{
+    signInWithPopup(auth, googleProvider)
+    .then(result => {
+      const user = result.user;
+      navigate(from);
+      console.log(user);
+    })
+    .catch(error => {
+      console.log('error:- ', error.message);
+    })
+  }
 
   return (
     <div className="hero my-10 bg-base-100">
@@ -77,6 +91,7 @@ const Login = () => {
             </div>
             <div className="-mt-7">
             <button 
+            onClick={handelGoggleSigning}
             type="submit"
             aria-label="Continue with google"
             role="button"
