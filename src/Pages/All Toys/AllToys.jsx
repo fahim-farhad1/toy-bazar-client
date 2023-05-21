@@ -20,9 +20,9 @@ const AllToys = () => {
   };
   const handelModal = () => {
     Swal.fire({
-      title: "You have to log in first to view details",
+      title: "You have to Login first to view details",
       showCancelButton: true,
-      confirmButtonText: "login",
+      confirmButtonText: "Login",
     }).then((result) => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
@@ -72,7 +72,7 @@ const AllToys = () => {
                         <Link to={toy._id}>
                           {" "}
                           <button className="btn bg-orange-600">
-                            details
+                            View Details
                           </button>{" "}
                         </Link>
                       ) : (
@@ -80,7 +80,7 @@ const AllToys = () => {
                           onClick={handelModal}
                           className="btn bg-orange-600"
                         >
-                          details
+                          View Details
                         </button>
                       )}
                     </div>

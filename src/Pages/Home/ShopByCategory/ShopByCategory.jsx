@@ -1,17 +1,34 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../Providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const ShopByCategory = () => {
+  const navigate = useNavigate();
   const [toys, setToys] = useState([]);
   const [category, setCategory] = useState('');
+  const {user} = useContext(AuthContext);
   // const {toyName, price, rating} = toys;
   useEffect(() => {
     fetch(`https://toy-bazar-server.vercel.app/toys?category=${category}`)
       .then((res) => res.json())
-      .then((data) => setToys(data.slice(0, 5)));
+      .then((data) => setToys(data));
   }, [category]);
+
+  const handelModal = () => {
+    Swal.fire({
+      title: "You have to Login first to view details",
+      showCancelButton: true,
+      confirmButtonText: "Login",
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        navigate("/login");
+      }
+    });
+  };
   
   return (
     <div className="my-5">
@@ -43,7 +60,21 @@ const ShopByCategory = () => {
                     <h2 className="card-title">{toy.rating}</h2>
                     {/* Modal Section */}
                     <div className="card-actions justify-end">
-                      <Link to={`allToys/${toy._id}`}><button className="btn btn-primary">View Details</button></Link>
+                    {user ? (
+                        <Link to={toy._id}>
+                          {" "}
+                          <button className="btn bg-orange-600">
+                            View Details
+                          </button>{" "}
+                        </Link>
+                      ) : (
+                        <button
+                          onClick={handelModal}
+                          className="btn bg-orange-600"
+                        >
+                          View Details
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>
