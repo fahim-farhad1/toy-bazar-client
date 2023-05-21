@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const AllToys = () => {
   const [Toys, setToys] = useState([]);
+  const { user } = useContext(AuthContext);
   useEffect(() => {
     fetch("https://toy-bazar-server.vercel.app/allToys")
       .then((res) => res.json())
@@ -49,11 +51,17 @@ const AllToys = () => {
                   <td>{toy.toyName}</td>
                   <td>{toy.category}</td>
                   <td>${toy.price}</td>
-                  <td>${toy.quantity}</td>
+                  <td>{toy.quantity}</td>
                   <th>
-                    <Link to={toy._id}>
-                      <button className="btn bg-orange-600">details</button>
-                    </Link>
+                    {/* <>
+                      {
+                        user ?
+                        <Link to={toy._id}>
+                          <button className="btn bg-orange-600">details</button> :
+                        </Link>
+                        <button>hi</button>
+                      }
+                    </> */}
                   </th>
                 </tr>
               </>

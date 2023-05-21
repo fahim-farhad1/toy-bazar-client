@@ -7,11 +7,11 @@ const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const handelLogOut = () => {
     logOut()
-      .then(() => {
-        // Log-out successful.
+      .then((result ) => {
+        console.log(result);
       })
       .catch((error) => {
-        // An error happened.
+        console.log(error.message);
       });
   };
   return (
@@ -40,7 +40,7 @@ const Navbar = () => {
           >
             <li>
               <NavLink
-                to="/home"
+                to="/"
                 className={({ isActive }) =>
                   isActive
                     ? " font-bold text-orange-600 border-b border-orange-700"
@@ -108,7 +108,7 @@ const Navbar = () => {
         <ul className="flex space-x-10">
           <li>
             <NavLink
-              to="/home"
+              to="/"
               className={({ isActive }) =>
                 isActive
                   ? " font-bold text-orange-600 border-b border-orange-700"

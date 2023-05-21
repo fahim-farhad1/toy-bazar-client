@@ -5,12 +5,14 @@ import { Link } from "react-router-dom";
 
 const ShopByCategory = () => {
   const [toys, setToys] = useState([]);
+  const [category, setCategory] = useState('');
   // const {toyName, price, rating} = toys;
   useEffect(() => {
-    fetch("https://toy-bazar-server.vercel.app/allToys")
+    fetch(`https://toy-bazar-server.vercel.app/toys?category=${category}`)
       .then((res) => res.json())
       .then((data) => setToys(data.slice(0, 5)));
-  }, []);
+  }, [category]);
+  
   return (
     <div className="my-5">
       <p className="md:text-4xl text-center font-bold text-orange-500">
@@ -18,9 +20,9 @@ const ShopByCategory = () => {
       </p>
       <Tabs>
         <TabList className="text-center pt-5">
-          <Tab>Marvel</Tab>
-          <Tab>Avengers </Tab>
-          <Tab>Star Wars</Tab>
+          <Tab onClick={() => setCategory('Marvel')}>Marvel</Tab>
+          <Tab onClick={() => setCategory('Avengers')}>Avengers </Tab>
+          <Tab onClick={() => setCategory('Star Wars')}>Star Wars</Tab>
         </TabList>
 
         <TabPanel className="">

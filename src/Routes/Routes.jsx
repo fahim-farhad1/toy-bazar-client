@@ -18,42 +18,49 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Displayed></Displayed>,
-      },
-      {
-        path: "home",
         element: <Home></Home>,
       },
       {
-        path: 'signUp',
-        element: <SignUp></SignUp>
+        path: "signUp",
+        element: <SignUp></SignUp>,
       },
       {
-        path: 'login',
-        element: <Login></Login>
+        path: "login",
+        element: <Login></Login>,
       },
       {
         path: "allToys",
         element: <AllToys></AllToys>,
-        
       },
       {
         path: "allToys/:id",
-        element: <PrivateRoutes><SingleToyData></SingleToyData></PrivateRoutes>,
+        element: (
+          <PrivateRoutes>
+            <SingleToyData></SingleToyData>
+          </PrivateRoutes>
+        ),
         loader: ({ params }) =>
           fetch(`https://toy-bazar-server.vercel.app/allToys/${params.id}`),
       },
       {
-        path: 'blogs',
-        element: <Blogs></Blogs>
+        path: "blogs",
+        element: <Blogs></Blogs>,
       },
       {
-        path: 'addatoy',
-        element: <PrivateRoutes><AddAToy></AddAToy></PrivateRoutes>
+        path: "addatoy",
+        element: (
+          <PrivateRoutes>
+            <AddAToy></AddAToy>
+          </PrivateRoutes>
+        ),
       },
       {
-        path: 'mytoys',
-        element: <PrivateRoutes><MyToys></MyToys></PrivateRoutes>
+        path: "mytoys",
+        element: (
+          <PrivateRoutes>
+            <MyToys></MyToys>
+          </PrivateRoutes>
+        ),
       },
       // {
       //   path: "allToys/:id",
