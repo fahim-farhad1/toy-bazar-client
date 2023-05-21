@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
+  GoogleAuthProvider,
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
@@ -26,6 +27,8 @@ const AuthProvider = ({ children }) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
+
+  const googleProvider = new GoogleAuthProvider ();
 
   const logOut = () => {
     setLoading(true);
