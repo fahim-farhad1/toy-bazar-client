@@ -43,7 +43,7 @@ const AddAToy = () => {
 
   //   send data to the server
   fetch("toy-bazar-server.vercel.app/mytoys", {
-//   fetch("http://localhost:3000/mytoys", {
+  // fetch("http://localhost:3000/mytoys", {
     method: "POST",
     headers: {
       "content-type": "application/json",
