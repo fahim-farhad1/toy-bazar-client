@@ -39,11 +39,17 @@ const AddAToy = () => {
       quantity,
       details,
     });
+    Swal.fire({
+      title: "Success!",
+      text: "User Added Successfully!",
+      icon: "success",
+      confirmButtonText: "Cool",
+    });
   };
 
   //   send data to the server
   fetch("toy-bazar-server.vercel.app/mytoys", {
-  // fetch("http://localhost:3000/mytoys", {
+    // fetch("http://localhost:3000/mytoys", {
     method: "POST",
     headers: {
       "content-type": "application/json",
@@ -51,17 +57,9 @@ const AddAToy = () => {
     body: JSON.stringify(newToy),
   })
     .then((res) => res.json())
-    .then((data) =>{
-     console.log(data);
-     if (data.insertedId) {
-      Swal.fire({
-        title: 'Success!',
-        text: 'User Added Successfully!',
-        icon: 'success',
-        confirmButtonText: 'Cool'
-      })
-     }
-      })
+    .then((data) => {
+      console.log(data);
+    });
 
   return (
     <div className="container mx-auto p-4 ">
