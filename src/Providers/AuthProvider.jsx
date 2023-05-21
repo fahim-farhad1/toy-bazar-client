@@ -16,7 +16,7 @@ const auth = getAuth(app);
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-
+  console.log(user);
   //   create new user
   const createUser = (email, password, name) => {
     setLoading(true);
@@ -37,10 +37,11 @@ const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
-      if (currentUser) {
-        setUser(createUser);
+      console.log(currentUser);
+     
+        setUser(currentUser);
         setLoading(false);
-      }
+     
     });
     return () => {
       return unSubscribe();

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 const AddAToy = () => {
   const [imageUrl, setPictureUrl] = useState("");
@@ -50,7 +51,17 @@ const AddAToy = () => {
     body: JSON.stringify(newToy),
   })
     .then((res) => res.json())
-    .then((data) => console.log(data));
+    .then((data) =>{
+     console.log(data);
+     if (data.insertedId) {
+      Swal.fire({
+        title: 'Success!',
+        text: 'User Added Successfully!',
+        icon: 'success',
+        confirmButtonText: 'Cool'
+      })
+     }
+      })
 
   return (
     <div className="container mx-auto p-4 ">

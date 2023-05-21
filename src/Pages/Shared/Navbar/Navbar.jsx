@@ -169,7 +169,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        {user && (
+        {user?.uid  && (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -185,7 +185,7 @@ const Navbar = () => {
             />
           </svg>
         )}
-        {user ? (
+        {user?.uid ? (
           <button onClick={handelLogOut} className="btn">
             Logout
           </button>

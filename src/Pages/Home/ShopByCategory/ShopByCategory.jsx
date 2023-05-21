@@ -25,9 +25,10 @@ const ShopByCategory = () => {
     }).then((result) => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
-        navigate("/login");
+        navigate('/login');
       }
     });
+    
   };
 
   return (
