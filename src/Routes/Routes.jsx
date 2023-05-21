@@ -10,7 +10,8 @@ import AddAToy from "../Pages/Add a Toy/AddAToy";
 import MyToys from "../Pages/My Toys/MyToys";
 import BlogPage from "../Pages/Blogs/BlogPage";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
   {
     path: "/",
     element: <Main></Main>,
@@ -61,12 +62,6 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
       },
-      // {
-      //   path: "allToys/:id",
-      //   element: <PrivateRoutes><SingleToyData></SingleToyData></PrivateRoutes>,
-      //   loader: ({ params }) =>
-      //     fetch(`https://toy-bazar-server.vercel.app/allToys/${params.id}`),
-      // },
     ],
   },
 ]);

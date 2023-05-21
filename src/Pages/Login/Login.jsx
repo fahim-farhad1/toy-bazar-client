@@ -32,18 +32,21 @@ const Login = () => {
         console.log(errorCode, errorMessage);
       });
 
+      googleLogin()
+    
+
   };
 
   const handelGoggleSigning = () =>{
     signInWithPopup(auth, googleProvider)
-    .then(result => {
-      const user = result.user;
-      navigate(from);
-      console.log(user);
-    })
-    .catch(error => {
-      console.log('error:- ', error.message);
-    })
+  .then(result => {
+    const user = result.user;
+    navigate(from);
+    console.log(user);
+  })
+  .catch(error => {
+    console.log('error:- ', error.message);
+  })
   }
 
   return (
