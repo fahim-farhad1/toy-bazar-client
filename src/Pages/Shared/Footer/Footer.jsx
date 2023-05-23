@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="text-base-content bg-base-200 pb-10">
+    <div className="bg-base-200 pb-10">
       <footer className="footer p-10 ">
         <div>
           <img className="h-12" src={Logo} />
@@ -77,7 +77,7 @@ const Footer = () => {
                 placeholder="username@site.com"
                 className="input input-bordered w-full pr-16"
               />
-              <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">
+              <button className="btn bg-orange-600 absolute top-0 right-0 rounded-l-none">
                 Subscribe
               </button>
             </div>

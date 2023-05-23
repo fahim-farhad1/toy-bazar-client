@@ -44,23 +44,24 @@ const ShopByCategory = () => {
         </TabList>
 
         <TabPanel className="">
-          <div className="card card-compact bg-base-100 shadow-xl">
+          <div className="card card-compact bg-base-100">
             <figure></figure>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {toys.map((toy) => (
+                console.log(toy),
                 <div className="card w-96 bg-base-100 shadow-xl">
                   <figure>
                     <img
-                      src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      alt="Shoes"
+                    className="w-full h-80"
+                      src={toy.imageUrl}
                     />
                   </figure>
                   <div className="card-body">
                     <h2 className="card-title">{toy.toyName}</h2>
-                    <h2 className="card-title">{toy.price}</h2>
-                    <h2 className="card-title">{toy.rating}</h2>
+                    <h2><span className="text-lg">Price:</span> ${toy.price}</h2>
+                    <h2><span className="text-lg">Rating: </span>{toy.rating}</h2>
                     {/* Modal Section */}
-                    <div className="card-actions justify-end">
+                    <div className="text-center">
                       {user ? (
                         <Link to={`/allToys/${toy._id}`}>
                           <button className="btn bg-orange-600">
@@ -87,19 +88,34 @@ const ShopByCategory = () => {
             <figure></figure>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
               {toys.map((toy) => (
+                console.log(toy),
                 <div className="card w-96 bg-base-100 shadow-xl">
                   <figure>
                     <img
-                      src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      alt="Shoes"
+                    className="w-full h-80"
+                      src={toy.imageUrl}
                     />
                   </figure>
                   <div className="card-body">
                     <h2 className="card-title">{toy.toyName}</h2>
-                    <h2 className="card-title">{toy.price}</h2>
-                    <h2 className="card-title">{toy.rating}</h2>
-                    <div className="card-actions justify-end">
-                      <button className="btn btn-primary">View Details</button>
+                    <h2><span className="text-lg">Price:</span> ${toy.price}</h2>
+                    <h2><span className="text-lg">Rating: </span>{toy.rating}</h2>
+                    {/* Modal Section */}
+                    <div className="text-center">
+                      {user ? (
+                        <Link to={`/allToys/${toy._id}`}>
+                          <button className="btn bg-orange-600">
+                            View Details
+                          </button>
+                        </Link>
+                      ) : (
+                        <button
+                          onClick={handelModal}
+                          className="btn bg-orange-600"
+                        >
+                          View Details
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -112,19 +128,34 @@ const ShopByCategory = () => {
             <figure></figure>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
               {toys.map((toy) => (
+                console.log(toy),
                 <div className="card w-96 bg-base-100 shadow-xl">
                   <figure>
                     <img
-                      src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      alt="Shoes"
+                    className="w-full h-80"
+                      src={toy.imageUrl}
                     />
                   </figure>
                   <div className="card-body">
                     <h2 className="card-title">{toy.toyName}</h2>
-                    <h2 className="card-title">{toy.price}</h2>
-                    <h2 className="card-title">{toy.rating}</h2>
-                    <div className="card-actions justify-end">
-                      <button className="btn btn-primary">View Details</button>
+                    <h2><span className="text-lg">Price:</span> ${toy.price}</h2>
+                    <h2><span className="text-lg">Rating: </span>{toy.rating}</h2>
+                    {/* Modal Section */}
+                    <div className="text-center">
+                      {user ? (
+                        <Link to={`/allToys/${toy._id}`}>
+                          <button className="btn bg-orange-600">
+                            View Details
+                          </button>
+                        </Link>
+                      ) : (
+                        <button
+                          onClick={handelModal}
+                          className="btn bg-orange-600"
+                        >
+                          View Details
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -132,6 +163,8 @@ const ShopByCategory = () => {
             </div>
           </div>
         </TabPanel>
+ 
+
       </Tabs>
     </div>
   );

@@ -1,8 +1,12 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import useTitle from "../../Hooks/useTitle";
+import Swal from "sweetalert2";
 
 const SignUp = () => {
+  useTitle('Sign Up')
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [photoUrl, setPhotoUrl] = useState("");
@@ -24,11 +28,25 @@ const SignUp = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        navigate('/login');
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Sign Up Successfully ',
+          showConfirmButton: false,
+          timer: 1500
+        })
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log(errorCode, errorMessage);
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Something went wrong!',
+          
+        })
       });
   };
 

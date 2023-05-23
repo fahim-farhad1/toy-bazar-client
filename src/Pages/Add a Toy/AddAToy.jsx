@@ -1,65 +1,63 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../Providers/AuthProvider";
+import useTitle from "../../Hooks/useTitle";
 
 const AddAToy = () => {
+  const {user} = useContext(AuthContext);
+  useTitle('Add Toy')
   const [imageUrl, setPictureUrl] = useState("");
   const [toyName, setToyName] = useState("");
-  const [seller, setSellerName] = useState("");
-  const [sellerEmail, setSellerEmail] = useState("");
+  const [seller, setSellerName] = useState(user.displayName);
+  const [sellerEmail, setSellerEmail] = useState(user.email);
   const [category, setCategory] = useState("");
   const [price, setPrice] = useState("");
   const [rating, setRating] = useState("");
   const [quantity, setQuantity] = useState("");
   const [details, setDescription] = useState("");
 
-  const newToy = {
-    imageUrl,
-    toyName,
-    seller,
-    sellerEmail,
-    category,
-    price,
-    rating,
-    quantity,
-    details,
-  };
+
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform form submission logic here
-    // You can access all the form fields' values here
-    console.log({
-      imageUrl,
+
+    const newToy = {
       toyName,
       seller,
       sellerEmail,
+      imageUrl,
       category,
       price,
       rating,
-      quantity,
       details,
-    });
+      quantity,
+    };
+    console.log(newToy);
+    // Perform form submission logic here
+    // You can access all the form fields' values here
     Swal.fire({
       title: "Success!",
       text: "User Added Successfully!",
       icon: "success",
-      confirmButtonText: "Cool",
+      confirmButtonText: "Ok",
     });
+    e.target.reset();
+    //   send data to the server
+    fetch("https://toy-bazar-server.vercel.app/addtoys", {
+      // fetch("http://localhost:3000/mytoys", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newToy),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
   };
 
-  //   send data to the server
-  fetch("toy-bazar-server.vercel.app/mytoys", {
-    // fetch("http://localhost:3000/mytoys", {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-    },
-    body: JSON.stringify(newToy),
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-    });
 
   return (
     <div className="container mx-auto p-4 ">
@@ -102,9 +100,10 @@ const AddAToy = () => {
               <input
                 type="text"
                 id="seller"
-                value={seller}
-                onChange={(e) => setSellerName(e.target.value)}
+                defaultValue={user.displayName}
+                // onChange={(e) => setSellerName(e.target.defaultValue)}
                 className="input input-bordered w-full"
+                readOnly
               />
             </div>
 
@@ -115,8 +114,9 @@ const AddAToy = () => {
               <input
                 type="email"
                 id="sellerEmail"
-                value={sellerEmail}
-                onChange={(e) => setSellerEmail(e.target.value)}
+                defaultValue={user.email}
+                // onChange={(e) => setSellerEmail(e.target.defaultValue)}
+                readOnly
                 className="input input-bordered w-full"
               />
             </div>

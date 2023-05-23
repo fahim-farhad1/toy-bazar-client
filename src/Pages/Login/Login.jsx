@@ -2,8 +2,11 @@ import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { signInWithPopup } from "firebase/auth";
+import useTitle from "../../Hooks/useTitle";
+import Swal from "sweetalert2";
 
 const Login = () => {
+  useTitle('Login');
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -23,18 +26,18 @@ const Login = () => {
     signIn(email, password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
         navigate(from);
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log(errorCode, errorMessage);
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Wrong Password!',
+        })
       });
-
-      googleLogin()
-    
-
   };
 
   const handelGoggleSigning = () =>{
@@ -45,7 +48,7 @@ const Login = () => {
     console.log(user);
   })
   .catch(error => {
-    console.log('error:- ', error.message);
+    
   })
   }
 

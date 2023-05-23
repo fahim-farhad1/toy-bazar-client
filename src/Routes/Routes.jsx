@@ -9,13 +9,23 @@ import PrivateRoutes from "./PrivateRoutes";
 import AddAToy from "../Pages/Add a Toy/AddAToy";
 import MyToys from "../Pages/My Toys/MyToys";
 import BlogPage from "../Pages/Blogs/BlogPage";
+import Error from "../Error/Error";
+import UpdateToy from "../Pages/Update Toy/UpdateToy";
+
+
 
 const router = createBrowserRouter(
   [
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <Error></Error>,
     children: [
+      {
+        path: 'updateToy/:id',
+        element: <UpdateToy></UpdateToy>,
+        loader: ({params}) => fetch(`https://toy-bazar-server.vercel.app/allToys/${params.id}`)
+      },
       {
         path: "/",
         element: <Home></Home>,

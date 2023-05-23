@@ -2,8 +2,10 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import useTitle from "../../Hooks/useTitle";
 
 const AllToys = () => {
+  useTitle('All Toys')
   const navigate = useNavigate();
   const [Toys, setToys] = useState([]);
   const { user } = useContext(AuthContext);
@@ -12,12 +14,6 @@ const AllToys = () => {
       .then((res) => res.json())
       .then((data) => setToys(data.slice(0, 20)));
   }, []);
-
-  const handelShowMore = () => {
-    fetch("https://toy-bazar-server.vercel.app/allToys")
-      .then((res) => res.json())
-      .then((data) => setToys(data));
-  };
   const handelModal = () => {
     Swal.fire({
       title: "You have to Login first to view details",
@@ -65,7 +61,7 @@ const AllToys = () => {
                   <td>{toy.toyName}</td>
                   <td>{toy.category}</td>
                   <td>${toy.price}</td>
-                  <td>{toy.quantity}</td>
+                  <td className="text-center">{toy.quantity}</td>
                   <th>
                     <div>
                       {user ? (
@@ -90,14 +86,6 @@ const AllToys = () => {
             ))}
           </tbody>
         </table>
-      </div>
-      <div className="text-center my-5">
-        <button
-          className="btn rounded-xl bg-orange-500 hover:bg-orange-800"
-          onClick={handelShowMore}
-        >
-          Show More
-        </button>
       </div>
     </div>
   );

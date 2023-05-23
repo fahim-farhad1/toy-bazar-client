@@ -9,6 +9,7 @@ const SingleToyData = () => {
     <div className="card card-side bg-base-100 ">
       <figure>
         <img
+        className="w-96"
           src={imageUrl}
         />
       </figure>

@@ -5,7 +5,6 @@ import {
   getAuth,
   onAuthStateChanged,
   signInWithEmailAndPassword,
-  signInWithPopup,
   signOut,
 } from "firebase/auth";
 import { createContext } from "react";
@@ -19,9 +18,9 @@ const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   console.log(user);
   //   create new user
-  const createUser = (email, password, name) => {
+  const createUser = (email, password) => {
     setLoading(true);
-    return createUserWithEmailAndPassword(auth, email, password, name);
+    return createUserWithEmailAndPassword(auth, email, password);
   };
 
   const signIn = (email, password) => {
